@@ -1,0 +1,47 @@
+@import "colors";
+
+.home {
+  height: 100vh;
+
+  div {
+    padding-left: 5rem;
+    padding-top: 14rem;
+
+    > h1 {
+      font-size: 4rem;
+    }
+
+    > p {
+      font-size: 1.2rem;
+    }
+  }
+
+  > a {
+    display: block;
+    margin: 2rem 5rem;
+    width: 10rem;
+    background-color: $red;
+    color: white;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $reddark;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+  }
+}
