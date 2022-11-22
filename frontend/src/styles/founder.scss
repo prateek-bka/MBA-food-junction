@@ -1,0 +1,19 @@
+@import "colors";
+
+.founder {
+  width: 100%;
+  height: 85vh;
+  background-color: $red;
+
+  > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+}
